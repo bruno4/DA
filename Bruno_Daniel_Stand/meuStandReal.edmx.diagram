@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="31bc8a86c2454fabb955cc4a6e2913e4" Name="Diagram1" ZoomLevel="64" >
+        <EntityTypeShape EntityType="meuStandReal.Cliente" Width="1.5" PointX="0.5" PointY="4" />
+        <EntityTypeShape EntityType="meuStandReal.CarroOficina" Width="1.5" PointX="10.375" PointY="1" />
+        <EntityTypeShape EntityType="meuStandReal.Parcela" Width="1.5" PointX="4" PointY="2.375" />
+        <EntityTypeShape EntityType="meuStandReal.Servico" Width="1.5" PointX="7.25" PointY="2.25" />
+        <EntityTypeShape EntityType="meuStandReal.Venda" Width="1.5" PointX="4.125" PointY="6" />
+        <EntityTypeShape EntityType="meuStandReal.CarroVenda" Width="1.5" PointX="7" PointY="6.125" />
+        <EntityTypeShape EntityType="meuStandReal.Carro" Width="1.5" PointX="10.5" PointY="6.125" />
+        <EntityTypeShape EntityType="meuStandReal.Aluguer" Width="1.5" PointX="5.5" PointY="9.625" />
+        <EntityTypeShape EntityType="meuStandReal.CarroAluguer" Width="1.5" PointX="10.625" PointY="10.625" />
+        <InheritanceConnector EntityType="meuStandReal.CarroAluguer" />
+        <InheritanceConnector EntityType="meuStandReal.CarroOficina" />
+        <InheritanceConnector EntityType="meuStandReal.CarroVenda" />
+        <AssociationConnector Association="meuStandReal.ClienteCarroOficina" />
+        <AssociationConnector Association="meuStandReal.ParcelaServico" />
+        <AssociationConnector Association="meuStandReal.ServicoCarroOficina" />
+        <AssociationConnector Association="meuStandReal.ClienteVenda" />
+        <AssociationConnector Association="meuStandReal.ClienteAluguer" />
+        <AssociationConnector Association="meuStandReal.AluguerCarroAluguer" />
+        <AssociationConnector Association="meuStandReal.VendaCarroVenda" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

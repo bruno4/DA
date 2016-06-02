@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{700AED25-EEAF-492A-8869-44BB9D6B7297}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bruno_Daniel_Stand</RootNamespace>
+    <AssemblyName>Bruno_Daniel_Stand</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aluguer.cs">
+      <DependentUpon>meuStandReal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Carro.cs">
+      <DependentUpon>meuStandReal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CarroAluguer.cs">
+      <DependentUpon>meuStandReal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CarroOficina.cs">
+      <DependentUpon>meuStandReal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CarroVenda.cs">
+      <DependentUpon>meuStandReal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="classPartial.cs" />
+    <Compile Include="Cliente.cs">
+      <DependentUpon>meuStandReal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="formAdCarroAluguer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAdCarroAluguer.Designer.cs">
+      <DependentUpon>formAdCarroAluguer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAdCarroOficina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAdCarroOficina.Designer.cs">
+      <DependentUpon>formAdCarroOficina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAdCarroVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAdCarroVenda.Designer.cs">
+      <DependentUpon>formAdCarroVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAdVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAdVenda.Designer.cs">
+      <DependentUpon>formAdVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAluguer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAluguer.Designer.cs">
+      <DependentUpon>formAluguer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMenu.Designer.cs">
+      <DependentUpon>formMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formCarros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCarros.Designer.cs">
+      <DependentUpon>formCarros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formFichaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formFichaCliente.Designer.cs">
+      <DependentUpon>formFichaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formOficina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formOficina.Designer.cs">
+      <DependentUpon>formOficina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formVenda.Designer.cs">
+      <DependentUpon>formVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="meuStandReal.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>meuStandReal.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="meuStandReal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>meuStandReal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="meuStandReal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>meuStandReal.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Parcela.cs">
+      <DependentUpon>meuStandReal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servico.cs">
+      <DependentUpon>meuStandReal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Venda.cs">
+      <DependentUpon>meuStandReal.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="formAdCarroAluguer.resx">
+      <DependentUpon>formAdCarroAluguer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAdCarroOficina.resx">
+      <DependentUpon>formAdCarroOficina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAdCarroVenda.resx">
+      <DependentUpon>formAdCarroVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAdVenda.resx">
+      <DependentUpon>formAdVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAluguer.resx">
+      <DependentUpon>formAluguer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMenu.resx">
+      <DependentUpon>formMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCarros.resx">
+      <DependentUpon>formCarros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formFichaCliente.resx">
+      <DependentUpon>formFichaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formOficina.resx">
+      <DependentUpon>formOficina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formVenda.resx">
+      <DependentUpon>formVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="meuStandReal.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>meuStandReal.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="meuStandReal.edmx.diagram">
+      <DependentUpon>meuStandReal.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Aluguer.datasource" />
+    <None Include="Properties\DataSources\Carro.datasource" />
+    <None Include="Properties\DataSources\CarroAluguer.datasource" />
+    <None Include="Properties\DataSources\CarroOficina.datasource" />
+    <None Include="Properties\DataSources\CarroVenda.datasource" />
+    <None Include="Properties\DataSources\Cliente.datasource" />
+    <None Include="Properties\DataSources\Venda.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="meuStandReal.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>meuStandReal.Context.cs</LastGenOutput>
+      <DependentUpon>meuStandReal.edmx</DependentUpon>
+    </Content>
+    <Content Include="meuStandReal.edmx.sql" />
+    <Content Include="meuStandReal.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>meuStandReal.cs</LastGenOutput>
+      <DependentUpon>meuStandReal.edmx</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
